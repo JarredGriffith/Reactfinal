@@ -27,6 +27,28 @@ class APIcalls {
             console.error(`Problem creating employee: ${e}`);
         }
     }
+
+        //remeber that when you send a put request you can update the ID or it errors. 
+        put = async(car) => {
+            try{
+                let updatewithoutId = {
+                    //rename feilds base on what you want to do.
+                    name: car.guestNAme, 
+                    make: car.carMake, 
+                }
+                const resp = await fetch(`${ENDPOINT}/${car.id}`,{
+                    method: 'PUT', 
+                    headers: {
+                        'Content-type': 'application/json'
+                    }, 
+                    body: JSON.stringify(updatewithoutId), 
+                })
+                return resp;
+            } catch(e){
+                console.log("Put request error",e)
+            }
+        }
+        
     delete = async(id) => {
         try {
             const resp = await fetch(`${ENDPOINT}/${id}`, {
