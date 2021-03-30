@@ -12,15 +12,15 @@ class APIcalls {
         }
     }
 
-    create = async(car) => {
-        console.log(JSON.stringify(car))
+    create = async(p) => {
+        console.log(JSON.stringify(p))
         try{
             const resp = await fetch(ENDPOINT,{
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(car)
+                body: JSON.stringify(p)
             }); 
             return resp; 
         } catch(e) {
@@ -29,14 +29,16 @@ class APIcalls {
     }
 
         //remeber that when you send a put request you can update the ID or it errors. 
-        put = async(car) => {
+        put = async(player) => {
             try{
                 let updatewithoutId = {
                     //rename feilds base on what you want to do.
-                    name: car.guestNAme, 
-                    make: car.carMake, 
+                    name: player.name, 
+                    positon: player.positon, 
+                    sport: player.sport, 
+                    team: player.team
                 }
-                const resp = await fetch(`${ENDPOINT}/${car.id}`,{
+                const resp = await fetch(`${ENDPOINT}/${player.id}`,{
                     method: 'PUT', 
                     headers: {
                         'Content-type': 'application/json'

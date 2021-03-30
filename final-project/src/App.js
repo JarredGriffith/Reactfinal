@@ -3,6 +3,8 @@ import './App.css';
 import PageNav from './components/nav';
 import  PlayerList from './components/playerlist';
 import About from './components/about';
+import Home from './components/home'
+import APIcalls from './services/apiservices'
 import {
   //need to get thing from the react router. 
   BrowserRouter as Router,
@@ -19,8 +21,11 @@ function App() {
     <PageNav/>
     <div>
     <Router>
-     <Route path="/players" exact component={PlayerList}/>
-     <Route path="/about" component={About}/>
+      <Switch>
+        <Route path="/players" exact component={PlayerList}/>
+        <Route path="/about" component={About}/>
+        <Route path="/" component={Home}/>
+      </Switch>
     </Router>
     </div>
     </div>
