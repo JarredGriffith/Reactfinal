@@ -2,6 +2,8 @@ import React from 'react';
 import {Apicalls} from '../services/apiservices'
 import PlayerCard from './player-componets/player-card'
 import CardColumns from 'react-bootstrap/CardColumns'; 
+import Container from 'react-bootstrap/Container'
+import PlayerCoverPhoto from './player-componets/player-header'
 
 export default class PlayerList extends React.Component {
 constructor(props){
@@ -40,11 +42,15 @@ constructor(props){
             />
         })
         return(
-            <div>
-                <CardColumns>
-                {playerList}
-                </CardColumns>
-            </div>
+      
+                <Container> 
+                    <br/>
+                    <PlayerCoverPhoto/>
+                    <CardColumns>
+                         {playerList}
+                    </CardColumns>
+                </Container>
+     
         )
     }
 

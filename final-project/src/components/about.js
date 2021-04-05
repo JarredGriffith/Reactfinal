@@ -1,8 +1,13 @@
 import React from 'react';
+import AboutCoverPhoto from './about-componets/about-header'
+import Aboutbody from './about-componets/body'
 
 function About() {
     return (
-        <div>About Page</div>
+        <>
+        <AboutCoverPhoto/>
+        <Aboutbody/>
+        </>
     )
     
 }
