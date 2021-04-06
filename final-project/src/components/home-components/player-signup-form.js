@@ -1,6 +1,6 @@
 import React, { useState } from 'react'; 
 import { Form,Button } from 'react-bootstrap';
-
+import './homePage.css'
 
 export const PlayerForm = (props) => {
     const[name, setNAme] = useState(''); 
@@ -14,7 +14,8 @@ export const PlayerForm = (props) => {
     }
 
     return (
-        <form  onSubmit={handleSubmit}>
+        <form  onSubmit={handleSubmit} id="Newform">
+            <h2>Submission form</h2>
              <Form.Group controlId="name">
                 <Form.Label>Player Name</Form.Label>
                     <Form.Control type="text" placeholder="Enter name" value={name} onChange={(e)=> setNAme(e.target.value)} />

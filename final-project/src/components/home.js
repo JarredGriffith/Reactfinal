@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container'
 import {Row,Col } from 'react-bootstrap'
 import {Apicalls} from '../services/apiservices'
 import {PlayerForm} from './home-components/player-signup-form'
-
+import './home-components/homePage.css'
 
 function Home() {
 
@@ -25,21 +25,23 @@ function Home() {
     </div>
   </Container>
 </Jumbotron>
+<Container>
 <div>
     <Row>
-        <Col>Blank area </Col>
-        <Col xs={6}>
-        <div className="form-text">
-            <h2>This a lot happing in Vegas</h2>
+        <Col xs={12}>
+        <div className="form-texts">
+            <h2>There is a lot happing in Vegas</h2>
             <p>This is only the the begginning to a great future</p>
             <p>join the Vegas Sports by filling the form below.</p>
         {/* form would fo here */}
         </div>
+        <div>
           <PlayerForm addPlayer={addPlayer}/>
+          </div>
         </Col>
-        <Col>Blank area </Col>
     </Row>
 </div>
+</Container>
 </>
     )
 

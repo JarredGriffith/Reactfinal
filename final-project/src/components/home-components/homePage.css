@@ -1,0 +1,35 @@
+#Newform{
+    font-family: 'Open Sans Condensed', arial, sans;
+	width: 500px;
+	padding: 30px;
+	background: #FFFFFF;
+	margin: 50px auto;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+  }
+
+  #Newform h2{
+    background: #4D4D4D;
+	text-transform: uppercase;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #d1d1d1;
+	font-size: 18px;
+	font-weight: 100;
+	padding: 20px;
+	margin: -30px -30px 30px -30px;
+    text-align: center;
+  }
+
+  .form-texts{
+      border: solid rgba(199, 199, 199, 0.123);
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  }
+  .form-texts h2{
+    text-align: center;
+    padding: 1vh;
+}
+.form-texts p {
+    padding: 0;
+text-align: center;
+}

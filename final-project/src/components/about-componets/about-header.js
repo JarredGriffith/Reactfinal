@@ -12,7 +12,6 @@ function AboutCoverPhoto() {
                 <p> Our Community</p>
             </TextLoop>
             </h1>
-            
         </Jumbotron>
     )
 }
