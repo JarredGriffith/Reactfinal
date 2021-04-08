@@ -1,8 +1,8 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import CardColumns from 'react-bootstrap/CardColumns'; 
 import {Button} from 'react-bootstrap'
 import {UpdateCard} from './update-player'
+import './player.css'
 
 export default class PlayerCard extends React.Component {
     constructor(props) {
@@ -16,7 +16,7 @@ export default class PlayerCard extends React.Component {
 
     render() {
         return(
-            <Card >
+            <Card className="player-card">
             <Card.Body >
               <Card.Title>{this.props.name}</Card.Title>
               <Card.Text>

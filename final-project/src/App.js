@@ -13,13 +13,15 @@ import {
   Link, 
   useRouteMatch
 } from 'react-router-dom'; 
-
+import Container from 'react-bootstrap/Container'
 
 function App() {
   return (
     <div>
     <PageNav/>
     <div>
+      <br/>
+    <Container className="mid-background">
     <Router>
       <Switch>
         <Route path="/players" exact component={PlayerList}/>
@@ -27,6 +29,7 @@ function App() {
         <Route path="/" component={Home}/>
       </Switch>
     </Router>
+    </Container>
     </div>
     </div>
   );
