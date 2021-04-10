@@ -28,11 +28,10 @@ class APIcalls {
         }
     }
 
-        //remeber that when you send a put request you can update the ID or it errors. 
+        //remeber that when you send a put request you can't update the ID or it errors. 
         put = async(player) => {
             try{
                 let updatewithoutId = {
-                    //rename feilds base on what you want to do.
                     name: player.name, 
                     positon: player.positon, 
                     sport: player.sport, 

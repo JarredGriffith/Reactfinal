@@ -4,7 +4,6 @@ import PageNav from './components/nav';
 import  PlayerList from './components/playerlist';
 import About from './components/about';
 import Home from './components/home'
-import APIcalls from './services/apiservices'
 import {
   //need to get thing from the react router. 
   BrowserRouter as Router,
